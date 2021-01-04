@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dice Simulator</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/style.css')}}">
+</head>
+<body>
+<h1>Dice Simulator</h1>
+{% set fname = 'images/dice' + x + '.png' %}
+<form action="/" method="post">
+    <img class="dice" src="{{url_for('static',filename=fname)}}">
+    <button type="submit" name="roll" class="btn button1">Roll Dice</button>
+</form>
+
+
+</body>
+</html>
